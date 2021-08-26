@@ -1,0 +1,25 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--green);
+  transition: opacity 150ms ease-in-out;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+em {
+  font-family: inherit;
+  font-weight: 200;
+  font-style: italic;
+}

@@ -1,0 +1,53 @@
+@use '../util/' as *;
+
+header {
+  font-family: var(--font-unica);
+  font-style: normal;
+  font-weight: 600;
+
+  .branding {
+    position: absolute;
+    z-index: 99;
+  }
+}
+
+
+.desktop-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+
+  @include breakpoint-down(small) {
+    display: none;
+  }
+
+  &__column1 {
+    grid-column-start: 2;
+  }
+}
+
+.mobile-nav {
+  &__toggle {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 99;
+    cursor: pointer;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 80px 8px 8px 8px;
+    background-color: var(--tan);
+    display: none;
+    z-index: 9;
+  }
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}

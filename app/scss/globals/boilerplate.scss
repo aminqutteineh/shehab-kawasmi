@@ -1,0 +1,55 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--green);
+  background: var(--tan);
+}
+
+button {
+  display: inline-block;
+  border: solid 1px var(--lightgreen);
+  border-radius: 10px;
+  padding: 2px 7px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  background: var(--tan);
+  color: var(--green);
+  cursor: pointer;
+  transition: color 300ms ease;
+}
+
+button:hover {
+  color: var(--tan);
+  background: var(--green);
+}
+
+button.active {
+  color: var(--tan);
+  background-color: var(--green);
+}
+
+.containers {
+  padding: 0.5rem;
+
+  &__pb {
+    padding-bottom: 1rem;
+  }
+}

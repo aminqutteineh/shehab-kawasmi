@@ -1,0 +1,24 @@
+@use '../util/' as *;
+
+.featherlight .featherlight-inner {
+  height: 90vh;
+
+  @include breakpoint-down(small) {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+.featherlight .featherlight-content {
+  padding: 0;
+  border-bottom: none;
+  background: none;
+}
+
+.featherlight .featherlight-close-icon {
+    background: var(--green);
+    color: var(--tan);
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 30px;
+}

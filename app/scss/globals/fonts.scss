@@ -1,0 +1,13 @@
+:root {
+  --font-unica: 'neue-haas-unica', sans-serif;
+  --font-source: 'source-code-pro', monospace;
+  --font-diwany: "diwany";
+}
+
+@font-face {
+  font-family: "diwany";
+  src: url("/fonts/diwany.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
