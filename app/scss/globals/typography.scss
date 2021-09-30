@@ -8,7 +8,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--green);
+  color: inherit;
   transition: opacity 150ms ease-in-out;
 }
 
@@ -22,4 +22,11 @@ em {
   font-family: inherit;
   font-weight: 200;
   font-style: italic;
+}
+
+.arabic {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-align: right;
 }
